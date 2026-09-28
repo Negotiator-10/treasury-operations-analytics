@@ -1,0 +1,10 @@
+Counterparty,CounterpartyType,Rating,LimitUSD
+Bank A,Custody bank,AA-,70000000.0
+Bank B,Custody bank,A+,35000000.0
+Bank C,Custody bank,A,45000000.0
+Bank D,Custody bank,A+,35000000.0
+Bank E,Custody bank,A,25000000.0
+Bank F,Custody bank,BBB+,20000000.0
+FX Bank 1,FX counterparty,AA-,40000000.0
+FX Bank 2,FX counterparty,A+,30000000.0
+FX Bank 3,FX counterparty,A,25000000.0

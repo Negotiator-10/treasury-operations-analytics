@@ -1,0 +1,5 @@
+Scenario,Entity,Date,ExpectedException,Description
+H1,C01,2026-06-23,HEDGE_RATIO_BREACH,12% of the EUR hedged class redeemed in one day: hedge suddenly over 105%
+H2,C08,2026-07-20,MISSED_REBALANCE,Rebalance trades not done for 3 days (desk short-staffed); ratio drifts below 95%
+H3,Bank C,2026-07-20,COUNTERPARTY_LIMIT_BREACH,From Engine 1 S5: late USD 42m subscription left idle at Bank C over its limit
+H4,FX Bank 2,2026-07-31,CONCENTRATION_BREACH,July roll moved FX Bank 1 classes to FX Bank 2 for a better quote: over 50% of notional

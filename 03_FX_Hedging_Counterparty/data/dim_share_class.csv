@@ -1,0 +1,12 @@
+ClassID,ClassName,FundID,FundName,BaseCcy,ClassCcy,PrimaryCounterparty,InitialNAVUSD
+C01,Global Equity Index Fund EUR Hedged,F01,Global Equity Index Fund,USD,EUR,FX Bank 1,400000000.0
+C02,Global Equity Index Fund GBP Hedged,F01,Global Equity Index Fund,USD,GBP,FX Bank 2,150000000.0
+C03,Global Equity Index Fund JPY Hedged,F01,Global Equity Index Fund,USD,JPY,FX Bank 3,100000000.0
+C04,US Treasury Bond Fund EUR Hedged,F02,US Treasury Bond Fund,USD,EUR,FX Bank 1,250000000.0
+C05,US Treasury Bond Fund GBP Hedged,F02,US Treasury Bond Fund,USD,GBP,FX Bank 2,120000000.0
+C06,Euro Corporate Bond Fund USD Hedged,F03,Euro Corporate Bond Fund,EUR,USD,FX Bank 3,300000000.0
+C07,Euro Corporate Bond Fund GBP Hedged,F03,Euro Corporate Bond Fund,EUR,GBP,FX Bank 1,80000000.0
+C08,UK Equity Income Fund USD Hedged,F04,UK Equity Income Fund,GBP,USD,FX Bank 2,200000000.0
+C09,UK Equity Income Fund EUR Hedged,F04,UK Equity Income Fund,GBP,EUR,FX Bank 3,90000000.0
+C10,Japan Equity Fund USD Hedged,F05,Japan Equity Fund,JPY,USD,FX Bank 3,180000000.0
+C11,Japan Equity Fund EUR Hedged,F05,Japan Equity Fund,JPY,EUR,FX Bank 2,70000000.0

@@ -1,0 +1,34 @@
+[PASS] G1a opening(T) = closing(T-1), day 1 = target  (0 breaks)
+[PASS] G1b closing = opening + action + actual flows  (0 breaks)
+[PASS] G1c actual net flow = sum of settled flows in cash_flows.csv  (0 breaks)
+[PASS] G1d treasury action = sweep flows booked  (0 breaks)
+[PASS] G2a T+0 forecast = flows known by the morning  (0 breaks)
+[PASS] G2b sweep rule reproduces every treasury action  (0 breaks)
+[PASS] G3a ladder T+0 opening = actual opening  (0 breaks)
+[PASS] G3b ladder rolls: closing(h) = opening(h) + flows + action, opening(h) = closing(h-1)  (0 breaks)
+[PASS] G3c ladder flows use only information known at as-of date  (0 breaks)
+[PASS] G4 S1 caught: expected ['FORECAST_VARIANCE', 'ACTUAL_OVERDRAFT']  (got ['ACTUAL_OVERDRAFT', 'FORECAST_VARIANCE'])
+[PASS] G4 S2 caught: expected ['FORECAST_VARIANCE', 'ACTUAL_OVERDRAFT']  (got ['ACTUAL_OVERDRAFT', 'FORECAST_VARIANCE'])
+[PASS] G4 S3 caught: expected ['FORECAST_VARIANCE']  (got ['FORECAST_VARIANCE'])
+[PASS] G4 S4 caught: expected ['DUPLICATE_FLOW', 'FORECAST_VARIANCE', 'ACTUAL_OVERDRAFT']  (got ['ACTUAL_OVERDRAFT', 'DUPLICATE_FLOW', 'FORECAST_VARIANCE'])
+[PASS] G4 S5 caught: expected ['FORECAST_VARIANCE', 'IDLE_CASH']  (got ['FORECAST_VARIANCE', 'IDLE_CASH'])
+[PASS] G4 S6 caught: expected ['FORECAST_VARIANCE', 'ACTUAL_OVERDRAFT']  (got ['ACTUAL_OVERDRAFT', 'FORECAST_VARIANCE'])
+[PASS] G4 S7 early warning: flagged on all 5 prior ladders, no overdraft on the day  (warned 5/5, closing 11,961,838)
+[PASS] G5 every exception has a root cause and a real flow behind it  (untraced [])
+[PASS] G5b natural exceptions come from genuine fails / late notices  (Counter({'Settlement fail': 13, 'Unforecast flow': 10}))
+[PASS] G6 register matches flags  ({'FORECAST_VARIANCE': 27, 'ACTUAL_OVERDRAFT': 5, 'IDLE_CASH': 2, 'DUPLICATE_FLOW': 1})
+[PASS] G7 accuracy below 100% and decays with horizon  (T+0=96.4% T+1=96.2% T+2=73.2% T+3=44.4% T+4=44.5% T+5=44.5%)
+[PASS] G8 MMF balance never negative
+[PASS] G9 USD values = local x FX of the day  (0 breaks)
+[PASS] G10 duplicate check agrees with register  (1 duplicates)
+
+days=60 (2026-06-01 to 2026-08-21), accounts=15, flows=2714
+exceptions=35 by type {'FORECAST_VARIANCE': 27, 'ACTUAL_OVERDRAFT': 5, 'IDLE_CASH': 2, 'DUPLICATE_FLOW': 1}
+by source {'Natural': 23, 'S1': 2, 'S3': 1, 'S2': 2, 'S5': 2, 'S4': 3, 'S6': 2}
+cash last day USD 81,946,311
+overdraft cost USD 6,653, idle drag USD 130,200
+sweeps {'NONE': 668, 'FUND FROM MMF': 138, 'SWEEP TO MMF': 94}
+ladder flags {'OK': 3691, 'SURPLUS TO SWEEP': 606, 'FUNDING NEED': 871, 'ACTION: FUND FROM MMF': 138, 'ACTION: SWEEP TO MMF': 94}
+latest as-of funding needs 29
+
+23/23 gates passed

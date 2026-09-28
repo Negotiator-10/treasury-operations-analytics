@@ -1,0 +1,8 @@
+Scenario,AccountID,Date,ExpectedExceptions,Description
+S1,A10,2026-07-01,FORECAST_VARIANCE|ACTUAL_OVERDRAFT,"Late notice of a large redemption, not in the morning forecast"
+S2,A01,2026-07-14,FORECAST_VARIANCE|ACTUAL_OVERDRAFT,"Large sale proceeds fail to settle, arrive T+2 late"
+S3,A07,2026-07-08,FORECAST_VARIANCE,"Coupon received net of 30% withholding tax, forecast was gross"
+S4,A12,2026-07-27,DUPLICATE_FLOW|FORECAST_VARIANCE|ACTUAL_OVERDRAFT,Subscription loaded twice from the TA file; duplicate caused an over-sweep
+S5,A05,2026-07-20,FORECAST_VARIANCE|IDLE_CASH,"Large subscription received after the sweep cut-off, cash left idle"
+S6,A14,2026-08-05,FORECAST_VARIANCE|ACTUAL_OVERDRAFT,Unforecast margin call from the clearing house
+S7,A05,2026-08-10,,"Large redemption notified 5 days ahead; ladder warned, treasury funded it in time"

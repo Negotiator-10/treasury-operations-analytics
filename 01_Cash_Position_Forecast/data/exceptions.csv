@@ -1,0 +1,36 @@
+ExceptionID,Date,AccountID,FundName,Currency,Bank,ExceptionType,Severity,AmountLocal,AmountUSD,RootCause,RootFlowID,Source,SuggestedAction
+EX001,2026-06-02,A13,Japan Equity Fund,USD,Bank B,FORECAST_VARIANCE,Medium,411030,411030.0,Settlement fail,FL01206,Natural,"Chase counterparty, rebook expected value date"
+EX002,2026-06-03,A12,Japan Equity Fund,JPY,Bank B,FORECAST_VARIANCE,High,706185739,4858522.58,Settlement fail,FL01084,Natural,"Chase counterparty, rebook expected value date"
+EX003,2026-06-09,A14,India Equity Fund,INR,Bank F,FORECAST_VARIANCE,High,163631664,1879964.19,Unforecast flow,FL01867,Natural,Obtain notice earlier; review dealing / margin feeds
+EX004,2026-06-10,A01,Global Equity Index Fund,USD,Bank A,FORECAST_VARIANCE,Medium,3115088,3115088.0,Unforecast flow,FL01493,Natural,Obtain notice earlier; review dealing / margin feeds
+EX005,2026-06-17,A01,Global Equity Index Fund,USD,Bank A,FORECAST_VARIANCE,High,-6477624,-6477624.0,Unforecast flow,FL01498,Natural,Obtain notice earlier; review dealing / margin feeds
+EX006,2026-06-17,A12,Japan Equity Fund,JPY,Bank B,FORECAST_VARIANCE,Medium,315855099,2138045.27,Unforecast flow,FL01779,Natural,Obtain notice earlier; review dealing / margin feeds
+EX007,2026-06-19,A13,Japan Equity Fund,USD,Bank B,FORECAST_VARIANCE,Medium,-415779,-415779.0,Settlement fail,FL01229,Natural,"Chase counterparty, rebook expected value date"
+EX008,2026-07-01,A10,UK Equity Income Fund,GBP,Bank E,ACTUAL_OVERDRAFT,High,-6919058,-8762696.36,Unforecast flow,FL02474,S1,Fund account from MMF / credit line today; chase root cause
+EX009,2026-07-01,A10,UK Equity Income Fund,GBP,Bank E,FORECAST_VARIANCE,High,-11538879,-14613505.62,Unforecast flow,FL02474,S1,Obtain notice earlier; review dealing / margin feeds
+EX010,2026-07-03,A12,Japan Equity Fund,JPY,Bank B,ACTUAL_OVERDRAFT,High,-221835850,-1457789.85,Unforecast flow,FL01798,Natural,Fund account from MMF / credit line today; chase root cause
+EX011,2026-07-03,A12,Japan Equity Fund,JPY,Bank B,FORECAST_VARIANCE,High,-1376088932,-9042940.89,Unforecast flow,FL01798,Natural,Obtain notice earlier; review dealing / margin feeds
+EX012,2026-07-06,A14,India Equity Fund,INR,Bank F,FORECAST_VARIANCE,Medium,-105203721,-1217627.87,Unforecast flow,FL01887,Natural,Obtain notice earlier; review dealing / margin feeds
+EX013,2026-07-08,A04,Global Equity Index Fund,JPY,Bank B,FORECAST_VARIANCE,High,446852057,2888621.5,Settlement fail,FL00346,Natural,"Chase counterparty, rebook expected value date"
+EX014,2026-07-08,A07,Euro Corporate Bond Fund,EUR,Bank D,FORECAST_VARIANCE,High,-3272727,-3515524.07,Amount variance,FL02477,S3,Reconcile amount with paying agent / tax status
+EX015,2026-07-08,A13,Japan Equity Fund,USD,Bank B,FORECAST_VARIANCE,High,1138600,1138600.0,Settlement fail,FL01242,Natural,"Chase counterparty, rebook expected value date"
+EX016,2026-07-14,A01,Global Equity Index Fund,USD,Bank A,ACTUAL_OVERDRAFT,High,-23998491,-23998491.0,Settlement fail,FL02475,S2,Fund account from MMF / credit line today; chase root cause
+EX017,2026-07-14,A01,Global Equity Index Fund,USD,Bank A,FORECAST_VARIANCE,High,-39998645,-39998645.0,Settlement fail,FL02475,S2,"Chase counterparty, rebook expected value date"
+EX018,2026-07-14,A09,Euro Corporate Bond Fund,GBP,Bank D,FORECAST_VARIANCE,High,-898211,-1145228.01,Settlement fail,FL00810,Natural,"Chase counterparty, rebook expected value date"
+EX019,2026-07-16,A12,Japan Equity Fund,JPY,Bank B,FORECAST_VARIANCE,Medium,-532225078,-3481560.99,Settlement fail,FL01148,Natural,"Chase counterparty, rebook expected value date"
+EX020,2026-07-17,A01,Global Equity Index Fund,USD,Bank A,FORECAST_VARIANCE,Medium,5152395,5152395.0,Unforecast flow,FL01519,Natural,Obtain notice earlier; review dealing / margin feeds
+EX021,2026-07-20,A05,US Treasury Bond Fund,USD,Bank C,FORECAST_VARIANCE,High,42000000,42000000.0,Unforecast flow,FL02480,S5,Obtain notice earlier; review dealing / margin feeds
+EX022,2026-07-20,A05,US Treasury Bond Fund,USD,Bank C,IDLE_CASH,Medium,46988969,46988969.0,Unforecast flow,FL02480,S5,Sweep excess to MMF at next cut-off
+EX023,2026-07-23,A12,Japan Equity Fund,JPY,Bank B,DUPLICATE_FLOW,High,1764705882,11373882.35,Duplicate forecast entry,FL02479,S4,Remove duplicate from forecast before next ladder run
+EX024,2026-07-27,A12,Japan Equity Fund,JPY,Bank B,ACTUAL_OVERDRAFT,High,-877163085,-5633229.05,Duplicate forecast entry,FL02479,S4,Fund account from MMF / credit line today; chase root cause
+EX025,2026-07-27,A12,Japan Equity Fund,JPY,Bank B,FORECAST_VARIANCE,High,-1759163308,-11297522.68,Duplicate forecast entry,FL02479,S4,Remove duplicate from forecast
+EX026,2026-07-30,A04,Global Equity Index Fund,JPY,Bank B,FORECAST_VARIANCE,High,342407382,2237995.19,Settlement fail,FL00368,Natural,"Chase counterparty, rebook expected value date"
+EX027,2026-08-03,A12,Japan Equity Fund,JPY,Bank B,FORECAST_VARIANCE,Medium,-368050533,-2441227.66,Settlement fail,FL01175,Natural,"Chase counterparty, rebook expected value date"
+EX028,2026-08-05,A07,Euro Corporate Bond Fund,EUR,Bank D,FORECAST_VARIANCE,High,-5937212,-6517788.21,Unforecast flow,FL01670,Natural,Obtain notice earlier; review dealing / margin feeds
+EX029,2026-08-05,A14,India Equity Fund,INR,Bank F,ACTUAL_OVERDRAFT,High,-396697265,-4643341.49,Unforecast flow,FL02481,S6,Fund account from MMF / credit line today; chase root cause
+EX030,2026-08-05,A14,India Equity Fund,INR,Bank F,FORECAST_VARIANCE,High,-978260869,-11450543.47,Unforecast flow,FL02481,S6,Obtain notice earlier; review dealing / margin feeds
+EX031,2026-08-06,A01,Global Equity Index Fund,USD,Bank A,FORECAST_VARIANCE,High,18102852,18102852.0,Settlement fail,FL00070,Natural,"Chase counterparty, rebook expected value date"
+EX032,2026-08-06,A01,Global Equity Index Fund,USD,Bank A,IDLE_CASH,Medium,35223621,35223621.0,Settlement fail,FL00070,Natural,Sweep excess to MMF at next cut-off
+EX033,2026-08-06,A07,Euro Corporate Bond Fund,EUR,Bank D,FORECAST_VARIANCE,Medium,1825797,2005015.41,Unforecast flow,FL01671,Natural,Obtain notice earlier; review dealing / margin feeds
+EX034,2026-08-07,A10,UK Equity Income Fund,GBP,Bank E,FORECAST_VARIANCE,Medium,-1090984,-1358339.45,Settlement fail,FL00947,Natural,"Chase counterparty, rebook expected value date"
+EX035,2026-08-12,A13,Japan Equity Fund,USD,Bank B,FORECAST_VARIANCE,Medium,359124,359124.0,Settlement fail,FL01275,Natural,"Chase counterparty, rebook expected value date"

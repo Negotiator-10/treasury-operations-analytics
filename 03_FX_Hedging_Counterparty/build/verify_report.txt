@@ -1,0 +1,24 @@
+[PASS] G1 hedge notional = sum of live forward contracts  (0 breaks)
+[PASS] G2 hedge ratio and band status recomputed  (0 breaks)
+[PASS] G3 every out-of-band close is rebalanced next day to 100%, or flagged as missed  (0 breaks)
+[PASS] G4 rolls reset hedge to 100% of last NAV; nothing matured is left unsettled  (0 roll breaks, 0 unsettled)
+[PASS] G5 forward rate = spot x (1 + r class x t/360) / (1 + r base x t/360)  (0 breaks)
+[PASS] G6 roll settlement P&L = notional x (contract rate / spot at maturity - 1), summed per fund  (0 breaks)
+[PASS] G7 forward mark-to-market recomputed per class  (0 breaks)
+[PASS] G8 exposure = Engine 1 cash at the bank + positive net forward MTM; limits and 50% share rule  (0 breaks)
+[PASS] G9 exception episodes cover exactly the flagged days (incl. roll cash calls vs Engine 1 buffers)  ({'HEDGE_RATIO_BREACH': 6, 'MISSED_REBALANCE': 3, 'COUNTERPARTY_LIMIT_BREACH': 1, 'COUNTERPARTY_LIMIT_WARNING': 1, 'CONCENTRATION_BREACH': 16})
+[PASS] G10 H1 caught: HEDGE_RATIO_BREACH on C01  (2026-06-23 to 2026-06-23, peak 113.5%)
+[PASS] G10 H2 caught: MISSED_REBALANCE on C08; led to hard breach: True  (2026-07-20 to 2026-07-22, peak 93.1%)
+[PASS] G10 H3 caught: COUNTERPARTY_LIMIT_BREACH on Bank C  (2026-07-20 to 2026-07-20, peak 133%)
+[PASS] G10 H4 caught: CONCENTRATION_BREACH on FX Bank 2  (2026-07-31 to 2026-08-21, peak 66%)
+[PASS] G11 natural hard breaches rare (<1% of class-days) and rebalancing active  (3 natural breach days of 660, 38 rebalance trades)
+
+classes=11, class-days=660, contracts=71 {'Initial': 11, 'Rebalance': 38, 'Roll': 22}
+hedged NAV last day USD 1,839,095,563
+band status {'OK': 619, 'REBALANCE DUE': 35, 'HARD BREACH UNDER': 4, 'HARD BREACH OVER': 2}
+exceptions 10 {'HEDGE_RATIO_BREACH': 5, 'ROLL_CASH_CALL': 1, 'COUNTERPARTY_LIMIT_BREACH': 1, 'MISSED_REBALANCE': 1, 'CONCENTRATION_BREACH': 1, 'COUNTERPARTY_LIMIT_WARNING': 1}
+by source {'Natural': 5, 'H1': 1, 'H3': 1, 'H2': 2, 'H4': 1}
+roll settlements USD m: 2026-06-30 F01 -13.03, 2026-06-30 F02 -4.86, 2026-06-30 F03 10.70, 2026-06-30 F04 -6.00, 2026-06-30 F05 10.10, 2026-07-31 F01 6.86, 2026-07-31 F02 6.07, 2026-07-31 F03 -7.90, 2026-07-31 F04 1.81, 2026-07-31 F05 5.34
+max utilization: Bank A 93%, Bank B 70%, Bank C 133%, Bank D 76%, Bank E 73%, Bank F 78%, FX Bank 1 42%, FX Bank 2 19%, FX Bank 3 30%
+
+14/14 gates passed

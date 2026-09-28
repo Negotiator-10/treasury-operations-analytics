@@ -1,0 +1,11 @@
+# payments tool still in progress
+02_Payments_Cutoff_Control/
+
+# personal interview preparation, not for publishing
+*_Explained.docx
+*_Explained.pdf
+
+# temp and cache files
+~$*
+__pycache__/
+*.pyc

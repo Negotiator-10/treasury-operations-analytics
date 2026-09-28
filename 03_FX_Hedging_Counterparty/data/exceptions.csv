@@ -1,0 +1,11 @@
+ExceptionID,ExceptionType,Entity,StartDate,EndDate,Days,Severity,Peak,Detail,Source,Status,SuggestedAction
+HX001,HEDGE_RATIO_BREACH,C02,2026-06-19,2026-06-19,1,High,94.5%,Hedge ratio 94.5% outside 95% to 105%; biggest driver on the day: class flow,Natural,Closed,Rebalance today; review why the soft trigger did not prevent it
+HX002,HEDGE_RATIO_BREACH,C01,2026-06-23,2026-06-23,1,High,113.5%,Hedge ratio 113.5% outside 95% to 105%; biggest driver on the day: class flow,H1,Closed,Rebalance today; review why the soft trigger did not prevent it
+HX003,HEDGE_RATIO_BREACH,C06,2026-06-23,2026-06-23,1,High,106.2%,Hedge ratio 106.2% outside 95% to 105%; biggest driver on the day: class flow,Natural,Closed,Rebalance today; review why the soft trigger did not prevent it
+HX004,HEDGE_RATIO_BREACH,C11,2026-06-26,2026-06-26,1,High,93.6%,Hedge ratio 93.6% outside 95% to 105%; biggest driver on the day: market move,Natural,Closed,Rebalance today; review why the soft trigger did not prevent it
+HX005,ROLL_CASH_CALL,F04,2026-06-30,2026-06-30,1,Medium,USD 6.0m,"Roll settlement outflow GBP 4,720,008 exceeds base account target GBP 4,620,000",Natural,Closed,Pre-fund in the Engine 1 cash ladder two days ahead
+HX006,COUNTERPARTY_LIMIT_BREACH,Bank C,2026-07-20,2026-07-20,1,High,133%,Exposure USD 59.8m vs limit USD 45m,H3,Closed,Move cash to another bank or MMF / novate or reduce forwards
+HX007,MISSED_REBALANCE,C08,2026-07-20,2026-07-22,3,High,93.1%,Ratio outside 97% to 103% at prior close but no rebalance trade booked,H2,Closed,Book the rebalance; add a back-up owner for the hedge desk
+HX008,HEDGE_RATIO_BREACH,C08,2026-07-21,2026-07-22,2,High,93.1%,Hedge ratio 93.1% outside 95% to 105%; biggest driver on the day: class flow,H2,Closed,Rebalance today; review why the soft trigger did not prevent it
+HX009,CONCENTRATION_BREACH,FX Bank 2,2026-07-31,2026-08-21,16,High,66%,66% of all forward notional with one bank (limit 50%),H4,Open,Split next roll across FX banks
+HX010,COUNTERPARTY_LIMIT_WARNING,Bank A,2026-08-06,2026-08-06,1,Medium,93%,"Exposure USD 65.1m, above 90% of USD 70m limit",Natural,Closed,Plan to move cash before the next large inflow

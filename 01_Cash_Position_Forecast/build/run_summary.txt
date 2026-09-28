@@ -1,0 +1,5 @@
+flows=2714 daily=900 ladder=5400 exceptions=35
+min MMF balance (local, by acct): A01:30.0x, A02:29.9x, A03:24.2x, A04:25.7x, A05:7.2x, A06:26.5x, A07:8.3x, A08:12.0x, A09:19.8x, A10:30.0x, A11:28.3x, A12:23.8x, A13:11.3x, A14:24.7x, A15:19.4x
+exceptions by type/source: Counter({('FORECAST_VARIANCE', 'Natural'): 21, ('ACTUAL_OVERDRAFT', 'S1'): 1, ('FORECAST_VARIANCE', 'S1'): 1, ('ACTUAL_OVERDRAFT', 'Natural'): 1, ('FORECAST_VARIANCE', 'S3'): 1, ('ACTUAL_OVERDRAFT', 'S2'): 1, ('FORECAST_VARIANCE', 'S2'): 1, ('FORECAST_VARIANCE', 'S5'): 1, ('IDLE_CASH', 'S5'): 1, ('DUPLICATE_FLOW', 'S4'): 1, ('ACTUAL_OVERDRAFT', 'S4'): 1, ('FORECAST_VARIANCE', 'S4'): 1, ('ACTUAL_OVERDRAFT', 'S6'): 1, ('FORECAST_VARIANCE', 'S6'): 1, ('IDLE_CASH', 'Natural'): 1})
+sweep actions: Counter({'NONE': 668, 'FUND FROM MMF': 138, 'SWEEP TO MMF': 94})
+ladder flags: Counter({'OK': 3691, 'FUNDING NEED': 871, 'SURPLUS TO SWEEP': 606, 'ACTION: FUND FROM MMF': 138, 'ACTION: SWEEP TO MMF': 94})
